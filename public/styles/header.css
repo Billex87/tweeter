@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 400px
+  background-color: #4056A1;
+  color: #ffffff;
+  padding: 1.5em;
+  background-image: background-color: #0000c7;
+  background-image: background-color: #0000c7;
+  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+}
