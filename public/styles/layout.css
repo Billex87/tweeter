@@ -19,12 +19,26 @@ html {
  }
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif
+  align-items: center;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .container {
+   display: flex;
+   /* text-align: center ; */
+   width: 90%;
+   align-self: center;
+   justify-content: center;
+   background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
+ }
