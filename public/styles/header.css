@@ -1,11 +1,11 @@
-nav {
+header {
   display: flex;
-  justify-content: space-between;
-  height: 400px
-  background-color: #4056A1;
-  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  background-color: #ff000d;
+  color: #000000;
   padding: 1.5em;
-  background-image: background-color: #0000c7;
-  background-image: background-color: #0000c7;
-  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
-}
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/old-map.png");}
