@@ -1,39 +1,62 @@
 .tweet-header {
-  background-color: #f4f1ec;
-  display: flex;
-  padding-top: 100px;
-  height: 100px;
-  justify-content: left;
- flex-direction: row;
- text-align: left;
-}
-
-.tweat {
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: column;
-  background-color: #f4f1ec;
-  resize: none;
-  outline: none;
-  text-size-adjust: 34px;
-  border: none;
-  border-bottom-style: solid;
-}
-.tweet-picture {
+  background-color: white;
+  /* border: 3px solid green; */
   display: flex;
   flex-direction: row;
-  width: 50%;
+  justify-content: space-between;
+  height: auto;
+
+}
+.tweet-user-profile {
+  display: flex;
+  align-items: center;
+  height: auto;
 }
 
-.tweet-user-handle {
-  padding-right: 20px;
-  justify-content: flex-end;
-  margin-left: auto;
+.username {
+  padding-left: 20px;
 }
 
-.tweet-status-actions {
+
+.user-handle:hover {
+  color: rgb(9, 101, 230);
+  
+}
+
+.composed-tweet-message {
+  border-bottom: 3px solid #545149;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+}
+
+.tweet-footer {
+  
   color: blue;
-  padding-right: 20px;
-  justify-content: flex-end;
-  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+.submitted-tweet {
+  border: 3px solid black;
+  padding: 10px;
+}
+.tweet-footer i {
+  font-size: 15px;
+}
+
+.date-posted {
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.composed-tweeter-icons {
+  display: flex;
+  align-items: center;
+}
+
+.composed-tweeter-icons i {
+  padding: 0 5px;
 }
