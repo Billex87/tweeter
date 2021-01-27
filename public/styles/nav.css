@@ -7,3 +7,14 @@ nav {
   height: 120px;
   background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
 }
+
+.right {
+  color: whitesmoke;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.i {
+  color: red;
+}
