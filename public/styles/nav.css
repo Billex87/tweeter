@@ -3,18 +3,23 @@ nav {
   justify-content: space-between;
   background-color: #4056A1;
   color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 1.5em;
   height: 120px;
   background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
 }
 
 .right {
-  color: whitesmoke;
   display: flex;
-  text-align: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
-.i {
+
+i {
+  flex-direction: column;
   color: red;
+  
 }
