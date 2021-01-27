@@ -1,4 +1,5 @@
 #tweet-text {
+  padding-left: 10px;
   width: 100%;
   background-color: #f4f1ec;
   resize: none;
@@ -26,15 +27,17 @@
 }
 
 .count {
+  padding-bottom: 10px;
   justify-content: space-between;
 }
 .counter {
   justify-content: space-between;
+  float: right;
   font-weight: bolder;
   font-family: "Bungee";
 }
 .tweet-button:hover {
-  background-color: rgb(3, 0, 9);
+  background-color: #c2ba1b;
 }
 
 .tweet-bottom {
