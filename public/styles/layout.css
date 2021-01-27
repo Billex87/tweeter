@@ -10,9 +10,7 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+/* Global layout stuff */
 
  nav span {
   font-family: 'Bungee', sans-serif;
@@ -22,24 +20,23 @@ body {
   display: flex;
   flex-direction: column;
   color: #000000;
-  background-color: #c2ba1b;
-  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+  padding-top: 120px;
+  /* background-color: #c2ba1b; */
+  /* background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png"); */
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif
   align-items: center;
 }
 
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
+/* Additional CSS can be defined below or in other CSS files, as per instructions
+*/
 .container {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-self: center;
   justify-content: center;
-  background-color: #c2ba1b;
-  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+  /* background-color: #c2ba1b; */
+  /* background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png"); */
 }
