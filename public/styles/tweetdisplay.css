@@ -17,12 +17,10 @@
   padding-left: 20px;
 }
 
-
-.user-handle:hover {
-  color: rgb(9, 101, 230);
-  
+.submitted-tweet:hover .user-handle {
+  color: #c2ba1b;
+  display: inline-block;
 }
-
 .composed-tweet-message {
   border-bottom: 3px solid #545149;
   padding-bottom: 25px;
@@ -40,8 +38,7 @@
   padding-top: 5px;
 }
 .submitted-tweet {
-  border: 3px solid black;
-  padding: 10px;
+  
 }
 .tweet-footer i {
   font-size: 15px;
