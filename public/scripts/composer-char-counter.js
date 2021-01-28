@@ -3,7 +3,8 @@ $(document).ready(function() {
   const charsLeft = (140 - $(this).val().length);
   const outputTag = $(this).siblings('.count').children(".counter");
   outputTag.text(charsLeft);
-  if (charsLeft < 0) {
+  if (charsLeft < 0) { 
+    alert("Too Many Characters")
     outputTag.addClass("redChars");
   } else {outputTag.removeClass("redChars")
   };
