@@ -36,9 +36,17 @@ article {
 
 .redChars {
   color: red;
-  console
+
 }
 
+.error {
+  color: black;
+  font-family: "bungee";
+  border: 3px red solid;
+  width: 365px;
+  visibility: hidden;
+  font-style: italic;
+}
 .count {
   padding-bottom: 10px;
   justify-content: space-between;
