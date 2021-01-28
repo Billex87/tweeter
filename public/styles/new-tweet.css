@@ -4,6 +4,7 @@
   background-color: #f4f1ec;
   resize: none;
   outline: none;
+  overflow: auto;
   text-size-adjust: 34px;
   border: none;
   border-bottom-style: solid;
@@ -26,6 +27,17 @@
   border-radius: 5px;
 }
 
+article {
+  padding: 12px;
+  border: 3px black solid;
+  margin-bottom: 25px;
+  
+}
+
+.redChars {
+  color: red;
+}
+
 .count {
   padding-bottom: 10px;
   justify-content: space-between;
@@ -38,6 +50,10 @@
 }
 .tweet-button:hover {
   background-color: #c2ba1b;
+}
+
+article:hover {
+  box-shadow: 6px 6px #c2ba1b;
 }
 
 .tweet-bottom {
