@@ -41,13 +41,21 @@ $(document).ready(function () {
   loadTweets();
   $("form").submit(function (event) {
     event.preventDefault() 
+    if($("#tweet-text").val().length > 140) {
+    let message = `<i class="fas fa-biohazard"></i>Too Many Characters<i class="fas fa-biohazard"></i>`
+      $(".error").html(message) 
+      $(".error").css('visibility', 'visible')
+    } else {
+      $(".error").text('') 
+      $(".error").css('visibility', 'hidden')
     const data = $("form").serialize()
     $.post("/tweets", data, function(res){
       console.log(res);
-      loadTweets()
+      loadTweets() 
     })
+  }
   })
-})
+});
 const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
