@@ -1,39 +1,13 @@
-// Test / driver code (temporary). Eventually will get this from the server.
-// const data = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd"
-//     },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-// ]
 const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET' })
-    .then(function (sedata) {
-      console.log('Success: ', sedata);
-      // $button.replaceWith(data);
+    .then(function (data) {
+      console.log('Success: ', data);
+      renderTweets(data);
     });
 };
-loadTweets();
 
 const renderTweets = function(tweets) {
+  $(".submitted-tweet").empty()
   for (let tweet of tweets) {
     $(".submitted-tweet").append(createTweetElement(tweet))
   }
@@ -46,24 +20,37 @@ const createTweetElement = function(tweetObjects) {
   const tweet = `<article>
   <header class="tweet-header">
   <div class="tweet-user-profile">
-    <img src = "${tweetObjects.user.avatars}" </img>
+  <img src = "${tweetObjects.user.avatars}" </img>
     <p class="username"> ${tweetObjects.user.name}</p>
   </div>
   <span class="user-handle">${tweetObjects.user.handle}</span>
-</header>
-<p class="composed-tweet-message">${tweetObjects.content.text}t</p>
+  </header>
+<p class="composed-tweet-message">${escape(tweetObjects.content.text)}</p>
 <footer class="tweet-footer">
-  <p class="date-posted">${dayDif} Days Ago</p>
-  <div class="composed-tweeter-icons">
-    <i class="fas fa-flag"></i>
-    <i class="fas fa-retweet"></i>
-    <i class="fas fa-heart"></i>
-  </div>
+<p class="date-posted">${dayDif} Days Ago</p>
+<div class="composed-tweeter-icons">
+<i class="fas fa-flag"></i>
+<i class="fas fa-retweet"></i>
+<i class="fas fa-heart"></i>
+</div>
 </footer>
 </article>`
   return tweet;
 }
 $(document).ready(function () {
-  renderTweets(data);
+  loadTweets();
+  $("form").submit(function (event) {
+    event.preventDefault() 
+    const data = $("form").serialize()
+    $.post("/tweets", data, function(res){
+      console.log(res);
+      loadTweets()
+    })
+  })
 })
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
