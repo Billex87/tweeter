@@ -12,9 +12,6 @@ html {
 
 /* Global layout stuff */
 
- nav span {
-  font-family: 'Bungee', sans-serif;
- }
 
 body {
   display: flex;
@@ -24,7 +21,7 @@ body {
   /* background-color: #c2ba1b; */
   /* background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png"); */
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif
+  font-family: "Source Sans Pro", 
   align-items: center;
 }
 
