@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #4056A1;
+  background-color: #4056a1;
   color: #ffffff;
   position: fixed;
   top: 0;
@@ -11,15 +11,18 @@ nav {
   background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
 }
 
+.headerText {
+  font-family: "Bungee", sans-serif;
+}
+
 .right {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
 }
-
 
 i {
   flex-direction: column;
   color: red;
-  
 }
