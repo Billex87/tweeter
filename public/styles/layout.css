@@ -12,14 +12,11 @@ html {
 
 /* Global layout stuff */
 
-
 body {
   display: flex;
   flex-direction: column;
   color: #000000;
   padding-top: 120px;
-  /* background-color: #c2ba1b; */
-  /* background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png"); */
   font-size: 24px;
   font-family: "Source Sans Pro", 
   align-items: center;
@@ -27,13 +24,23 @@ body {
 
 /* Additional CSS can be defined below or in other CSS files, as per instructions
 */
-.container {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-self: center;
-  justify-content: center;
-  /* background-color: #c2ba1b; */
-  /* background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png"); */
+/*Desktop*/
+@media only screen and (min-width: 650px) {
+  header.pageHeader{
+    display:flex;
+    flex-direction: column;
+    flex-flow:row wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+  }
+  .stylingClass {
+    display:flex;
+    flex-direction: row;
+  }
+  .navStuff {
+    background-color: #4056a1;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");;  
+  }
+  
 }
+
