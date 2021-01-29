@@ -9,7 +9,6 @@ This repository is the starter code for the project: Students will fork and clon
 !["Screenshot of Main Page in Mobile Mode"](https://github.com/Billex87/tweeter/blob/master/docs/TweetBox.png)
 !["Screenshot of Tweets"](https://github.com/Billex87/tweeter/blob/master/docs/Tweets!.png)
 !["Screenshot of Too Many Characters Error"](https://github.com/Billex87/tweeter/blob/master/docs/Too%20Many%20Characters.png)
-!["Screenshot of Empty Field Error"](https://github.com/Billex87/tweeter/blob/master/docs/Input%20Error.png)
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
