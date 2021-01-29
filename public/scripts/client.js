@@ -41,8 +41,13 @@ $(document).ready(function () {
   loadTweets();
   $("form").submit(function (event) {
     event.preventDefault() 
-    if($("#tweet-text").val().length > 140) {
-    let message = `<i class="fas fa-biohazard"></i>Too Many Characters<i class="fas fa-biohazard"></i>`
+    if($("#tweet-text").val().length === 0) {
+      let message = `<i class="far fa-keyboard"></i></i> Type Something Here <i class="far fa-keyboard"></i>`
+      $(".error").html(message) 
+      $(".error").css('visibility', 'visible')
+    }
+    else if($("#tweet-text").val().length > 140) {
+    let message = `<i class="fas fa-biohazard"></i> Too Many Characters <i class="fas fa-biohazard"></i>`
       $(".error").html(message) 
       $(".error").css('visibility', 'visible')
     } else {
