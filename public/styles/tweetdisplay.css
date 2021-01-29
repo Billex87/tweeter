@@ -7,6 +7,7 @@
   height: auto;
 
 }
+
 .tweet-user-profile {
   display: flex;
   align-items: center;
@@ -21,6 +22,7 @@
   color: #c2ba1b;
   display: inline-block;
 }
+
 .composed-tweet-message {
   border-bottom: 3px solid #545149;
   padding-bottom: 25px;
@@ -28,8 +30,6 @@
 }
 
 .tweet-footer {
-  
-  color: blue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,9 +37,11 @@
   align-items: flex-start;
   padding-top: 5px;
 }
+
 .submitted-tweet {
   
 }
+
 .tweet-footer i {
   font-size: 15px;
 }
