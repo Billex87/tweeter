@@ -1,27 +1,39 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #4056a1;
+  background-color: #cf9b00;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")
   color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 1.5em;
   height: 120px;
-  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+}
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
 }
 
 .headerText {
   font-family: "Bungee", sans-serif;
+  color: white;
 }
 
 .right {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
 }
-
+.title {
+  color: white;
+}
 i {
   flex-direction: column;
   color: red;
