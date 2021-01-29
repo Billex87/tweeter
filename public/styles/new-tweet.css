@@ -16,9 +16,9 @@
 
 .new-tweet {
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
+
 .tweet-button {
   color: white;
   font-family: "bungee";
@@ -47,22 +47,30 @@ article {
   visibility: hidden;
   font-style: italic;
 }
+
 .count {
   padding-bottom: 10px;
   justify-content: space-between;
 }
+
 .counter {
   justify-content: space-between;
   float: right;
   font-weight: bolder;
   font-family: "Bungee";
 }
+
 .tweet-button:hover {
-  background-color: #c2ba1b;
+  background-color: #cf9b00;
 }
 
 article:hover {
-  box-shadow: 6px 6px #c2ba1b;
+  box-shadow: 6px 6px #cf9b00;
+}
+
+article:hover #composed-tweeter-icons i {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 
 .tweet-bottom {
